@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Created by andre on Dec 17, 2011 -->
+<config>
+<!-- First the physical topology of the network and after the simulation parameters. -->
+<!-- Nodes in network (completely arbitrary) -->
+<Nodes>
+    <Node>1:a</Node> 
+    <Node>1:b</Node>
+    <Node>1:c</Node>
+    <Node>1:d</Node> 
+    <Node>1:e</Node>
+    <Node>1:f</Node>
+    <Node>1:g</Node> 
+    <Node>1:h</Node>  
+    <Node>2:a</Node> 
+    <Node>2:b</Node>
+    <Node>2:c</Node>
+    <Node>2:d</Node> 
+    <Node>2:e</Node>
+    <Node>2:f</Node>
+    <Node>2:g</Node> 
+    <Node>3:a</Node> 
+    <Node>3:b</Node>
+    <Node>3:c</Node>
+    <Node>3:d</Node> 
+    <Node>3:e</Node>
+    <Node>3:f</Node>
+    <Node>3:g</Node>                
+    <Node>4:a</Node> 
+    <Node>4:b</Node>
+    <Node>4:c</Node>
+    <Node>4:d</Node> 
+    <Node>4:e</Node>
+    <Node>4:f</Node>             
+    <Node>5:a</Node> 
+    <Node>5:b</Node>
+    <Node>5:c</Node>
+    <Node>5:d</Node> 
+    <Node>5:e</Node>
+    <Node>5:f</Node>
+    <Node>5:g</Node> 
+    <Node>5:h</Node>              
+    <Node>6:a</Node> 
+    <Node>6:b</Node>
+    <Node>6:c</Node>
+    <Node>6:d</Node> 
+    <Node>6:e</Node>   
+    <Node>7:a</Node> 
+    <Node>7:b</Node>
+    <Node>7:c</Node>
+    <Node>7:d</Node> 
+    <Node>7:e</Node>
+    <Node>7:f</Node> 
+    <Node>8:a</Node> 
+    <Node>8:b</Node>
+    <Node>8:c</Node>
+    <Node>8:d</Node> 
+    <Node>8:e</Node>
+    <Node>8:f</Node> 
+    <Node>8:g</Node> 
+    <Node>9:a</Node> 
+    <Node>9:b</Node>
+    <Node>9:c</Node>
+    <Node>9:d</Node> 
+    <Node>9:e</Node>
+    <Node>9:f</Node>
+    <Node>9:g</Node> 
+</Nodes>
+<!-- Paths between nodes -->
+<Paths>
+	<!-- Path from="source_node" to="target_node" value="cost" lambda="number_wavelengths" dataRate="(bits/sec)" -->
+    <!-- DOMAIN 1 (inter and intra paths) -->
+    <Path from="1:a" to="1:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:a" to="1:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:a" to="1:h" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:a" to="2:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:b" to="1:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:b" to="1:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:b" to="2:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:c" to="1:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:c" to="1:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:c" to="1:h" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:c" to="5:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:d" to="1:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:d" to="1:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:d" to="5:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:e" to="1:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:e" to="1:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:e" to="1:h" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:f" to="1:e" value="1" lambda="8" length="100" dataRate="10E9"/>    
+    <Path from="1:f" to="1:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:g" to="1:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:g" to="1:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:g" to="1:h" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:h" to="1:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:h" to="1:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:h" to="1:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="1:h" to="1:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+     <!-- DOMAIN 2 (inter and intra paths) -->
+    <Path from="2:a" to="2:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:a" to="2:g" value="1" lambda="8" length="100" dataRate="10E9"/>    
+    <Path from="2:b" to="2:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:b" to="2:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:b" to="2:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:c" to="3:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:c" to="2:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:c" to="2:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:d" to="3:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:d" to="2:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:d" to="2:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:e" to="2:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:e" to="2:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:f" to="2:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:f" to="2:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:f" to="2:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:f" to="1:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:g" to="2:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:g" to="2:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="2:g" to="1:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <!-- DOMAIN 3 (inter and intra paths) -->
+    <Path from="3:a" to="3:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:a" to="3:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:a" to="2:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:a" to="2:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:b" to="3:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:b" to="3:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:b" to="3:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:c" to="3:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:c" to="3:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:c" to="3:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:d" to="3:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:d" to="3:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:d" to="4:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:e" to="3:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:e" to="3:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:e" to="3:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:e" to="3:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:f" to="3:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:f" to="6:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:f" to="3:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:g" to="3:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:g" to="3:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:g" to="3:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="3:g" to="3:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <!-- DOMAIN 4 (inter and intra paths) -->
+    <Path from="4:a" to="4:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="4:a" to="4:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="4:a" to="3:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="4:b" to="4:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="4:b" to="4:f" value="1" lambda="8" length="100" dataRate="10E9"/>    
+    <Path from="4:c" to="4:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="4:d" to="4:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="4:d" to="7:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="4:e" to="4:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="4:e" to="4:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="4:e" to="7:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="4:f" to="4:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="4:f" to="4:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="4:f" to="4:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="4:f" to="4:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <!-- DOMAIN 5 (inter and intra paths) -->
+    <Path from="5:a" to="5:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:a" to="5:h" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:a" to="5:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:b" to="5:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:b" to="5:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:b" to="6:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:c" to="5:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:c" to="5:h" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:c" to="5:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:c" to="6:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:d" to="5:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:d" to="5:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:d" to="8:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:e" to="5:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:e" to="5:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:e" to="5:h" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:e" to="8:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:f" to="5:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:f" to="5:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:f" to="1:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:g" to="5:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:g" to="5:h" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:g" to="5:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:g" to="1:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:h" to="5:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:h" to="5:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:h" to="5:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="5:h" to="5:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <!-- DOMAIN 6 (inter and intra paths) -->
+    <Path from="6:a" to="6:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:a" to="6:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:a" to="3:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:b" to="6:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:b" to="6:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:b" to="6:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:b" to="7:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:c" to="6:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:c" to="6:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:c" to="7:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:d" to="6:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:d" to="6:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:d" to="5:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:e" to="6:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:e" to="6:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:e" to="6:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="6:e" to="5:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <!-- DOMAIN 7 (inter and intra paths) -->
+    <Path from="7:a" to="7:b" value="1" lambda="8" length="100" dataRate="10E9"/>    
+    <Path from="7:a" to="7:f" value="1" lambda="8" length="100" dataRate="10E9"/>  
+    <Path from="7:a" to="4:e" value="1" lambda="8" length="100" dataRate="10E9"/>  
+    <Path from="7:b" to="7:a" value="1" lambda="8" length="100" dataRate="10E9"/>  
+    <Path from="7:b" to="7:c" value="1" lambda="8" length="100" dataRate="10E9"/>  
+    <Path from="7:b" to="4:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="7:c" to="7:b" value="1" lambda="8" length="100" dataRate="10E9"/>  
+    <Path from="7:c" to="7:d" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="7:c" to="9:b" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="7:d" to="7:c" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="7:d" to="7:e" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="7:d" to="7:f" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="7:d" to="9:a" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="7:e" to="7:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="7:e" to="7:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="7:e" to="6:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="7:e" to="6:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="7:f" to="7:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="7:f" to="7:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="7:f" to="7:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <!-- DOMAIN 8 (inter and intra paths) -->
+    <Path from="8:a" to="8:b" value="1" lambda="8" length="100" dataRate="10E9"/>    
+    <Path from="8:a" to="8:e" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="8:a" to="8:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:a" to="5:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:b" to="8:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:b" to="8:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:b" to="8:c" value="1" lambda="8" length="100" dataRate="10E9"/>         
+    <Path from="8:c" to="8:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:c" to="8:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:c" to="9:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:d" to="8:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:d" to="8:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:e" to="8:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:e" to="8:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:e" to="8:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:e" to="8:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:f" to="8:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:f" to="8:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:g" to="8:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:g" to="8:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="8:g" to="5:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <!-- DOMAIN 9 (inter and intra paths) -->
+    <Path from="9:a" to="9:b" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="9:a" to="9:d" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="9:a" to="9:g" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="9:a" to="7:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="9:b" to="9:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="9:b" to="9:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="9:b" to="7:c" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="9:c" to="9:b" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="9:c" to="9:d" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="9:d" to="9:a" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="9:d" to="9:e" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="9:d" to="9:c" value="1" lambda="8" length="100" dataRate="10E9"/>  
+    <Path from="9:e" to="9:d" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="9:e" to="9:f" value="1" lambda="8" length="100" dataRate="10E9"/>   
+    <Path from="9:f" to="9:e" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="9:f" to="9:g" value="1" lambda="8" length="100" dataRate="10E9"/> 
+    <Path from="9:f" to="8:c" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="9:g" to="9:f" value="1" lambda="8" length="100" dataRate="10E9"/>
+    <Path from="9:g" to="9:a" value="1" lambda="8" length="100" dataRate="10E9"/>
+</Paths>
+<!-- Simulation Parameters -->
+<Simulation>
+	<!-- The simulator's main part. -->
+    
+    
+    
+   
+    
+    <!-- Information about domain ASBRs -->
+    
+    <Domains>
+        <ASBR>1:a</ASBR>
+        <ASBR>1:b</ASBR>
+        <ASBR>1:c</ASBR>
+        <ASBR>1:d</ASBR>
+        <ASBR>2:c</ASBR>
+        <ASBR>2:d</ASBR>
+        <ASBR>2:f</ASBR>
+        <ASBR>2:g</ASBR>
+        <ASBR>3:a</ASBR>
+        <ASBR>3:f</ASBR>
+        <ASBR>3:d</ASBR>
+        <ASBR>4:a</ASBR>
+        <ASBR>4:e</ASBR>
+        <ASBR>4:d</ASBR>
+        <ASBR>5:b</ASBR>
+        <ASBR>5:c</ASBR>
+        <ASBR>5:d</ASBR>
+        <ASBR>5:e</ASBR>
+        <ASBR>5:f</ASBR>
+        <ASBR>5:g</ASBR>
+        <ASBR>6:a</ASBR>
+        <ASBR>6:b</ASBR>
+        <ASBR>6:c</ASBR>
+        <ASBR>6:d</ASBR>
+        <ASBR>6:e</ASBR>
+        <ASBR>7:a</ASBR>
+        <ASBR>7:b</ASBR>
+        <ASBR>7:c</ASBR>
+        <ASBR>7:d</ASBR>
+        <ASBR>7:e</ASBR>
+        <ASBR>8:a</ASBR>
+        <ASBR>8:c</ASBR>
+        <ASBR>8:g</ASBR>
+        <ASBR>9:a</ASBR>
+        <ASBR>9:b</ASBR>
+        <ASBR>9:f</ASBR>
+        <POLICY from="1" to="2" by="2:f,2:g,5"/>
+        <POLICY from="2" to="1" by="1:a,1:b,3"/>
+        <POLICY from="2" to="3" by="3:a,1"/>
+        <POLICY from="3" to="2" by="2:c,2:d,6"/>
+        <POLICY from="3" to="4" by="4:a,6,2"/>
+        <POLICY from="4" to="3" by="3:d,7"/>
+        <POLICY from="1" to="5" by="5:g,5:f,2"/>
+        <POLICY from="5" to="1" by="1:d,1:c,6"/>
+        <POLICY from="6" to="5" by="5:b,5:c,7"/>
+        <POLICY from="5" to="6" by="6:d,6:e,8"/>
+        <POLICY from="6" to="3" by="3:f,7,5"/>
+        <POLICY from="3" to="6" by="6:a,2,4"/>   
+        <POLICY from="4" to="7" by="7:a,7:b,3"/>     
+        <POLICY from="7" to="4" by="4:d,4:e,6"/>  
+        <POLICY from="7" to="6" by="6:b,6:c,9"/>  
+        <POLICY from="6" to="7" by="7:e,3"/>  
+        <POLICY from="5" to="8" by="8:g,8:a,6"/> 
+        <POLICY from="8" to="5" by="5:d,5:e,9"/> 
+        <POLICY from="8" to="9" by="9:f,5:d,5"/> 
+        <POLICY from="9" to="8" by="8:c,7"/>  
+        <POLICY from="9" to="7" by="7:c,7:d,8"/> 
+        <POLICY from="7" to="9" by="9:b,9:a,6"/>  
+        <POLICY from="1" to="3" by="2,5"/>
+        <POLICY from="1" to="4" by="2,5"/>
+        <POLICY from="1" to="6" by="2,5"/>
+        <POLICY from="1" to="7" by="5,2"/>
+        <POLICY from="1" to="8" by="5,2"/>
+        <POLICY from="1" to="9" by="5,2"/>
+        <POLICY from="2" to="4" by="3,1"/>
+        <POLICY from="2" to="5" by="1,3"/>
+        <POLICY from="2" to="6" by="3,1"/>
+        <POLICY from="2" to="7" by="3,1"/>
+        <POLICY from="2" to="8" by="1,3"/>
+        <POLICY from="2" to="9" by="3,1"/>
+        <POLICY from="3" to="1" by="2,6"/>
+        <POLICY from="3" to="5" by="6,2"/>
+        <POLICY from="3" to="7" by="6,4,2"/>
+        <POLICY from="3" to="8" by="6,2"/>
+        <POLICY from="3" to="9" by="4,6,2"/>
+        <POLICY from="4" to="1" by="3,7"/>
+        <POLICY from="4" to="2" by="3,7"/>
+        <POLICY from="4" to="5" by="7,3"/>
+        <POLICY from="4" to="6" by="7,3"/>
+        <POLICY from="4" to="8" by="7,3"/>
+        <POLICY from="4" to="9" by="7,3"/>
+        <POLICY from="5" to="2" by="1,6"/>
+        <POLICY from="5" to="3" by="6,1"/>
+        <POLICY from="5" to="4" by="6,1,8"/>
+        <POLICY from="5" to="7" by="6,8"/>
+        <POLICY from="5" to="9" by="8,6"/>
+        <POLICY from="6" to="1" by="5,3"/>
+        <POLICY from="6" to="2" by="3,5"/>
+        <POLICY from="6" to="4" by="7,3"/>
+        <POLICY from="6" to="8" by="5,7"/>
+        <POLICY from="6" to="9" by="7,3"/>
+        <POLICY from="7" to="1" by="6,4"/>
+        <POLICY from="7" to="2" by="6,4"/>
+        <POLICY from="7" to="3" by="4,6"/>
+        <POLICY from="7" to="5" by="6,9"/>
+        <POLICY from="7" to="8" by="6,9"/>
+        <POLICY from="8" to="1" by="5,9"/>
+        <POLICY from="8" to="2" by="5,9"/>
+        <POLICY from="8" to="3" by="5,9"/>
+        <POLICY from="8" to="4" by="5,9"/>
+        <POLICY from="8" to="6" by="5,9"/>
+        <POLICY from="8" to="7" by="9,5"/>
+        <POLICY from="9" to="1" by="8,7"/>
+        <POLICY from="9" to="2" by="7,8"/>
+        <POLICY from="9" to="3" by="7,8"/>
+        <POLICY from="9" to="4" by="7,8"/>
+        <POLICY from="9" to="5" by="8,7"/>
+        <POLICY from="9" to="6" by="7,8"/>                             
+        
+    </Domains>
+
+
+
+
+    <!-- PARA SERIALIZAR O ARQUIVO! 
+	 <Serialize name="interdomain_fa_1attempt" time="30000"/>  -->
+	 
+     
+	<Main>
+		<!-- The variable of the simulation -->
+		<Variable name="/Generators/Traffic/@load" step="10" stop="100.1"/>
+		<!-- Number of requests. -->
+		<Requests value="100000"/>
+		<!-- The control plane used for this simulation. -->
+		<!-- <ControlPlane class="main.ControlPlane"/> -->
+		<ControlPlane class="rwa.crankback.obgp.OBGPControlPlane" seed="666"/>	
+	</Main>
+    
+    
+	<!-- The generators of traffic for the simulation -->
+	<Generators>
+		<!-- Traffic type. -->	
+		<!-- Traffic class="event.EventSubscriber" type="distribution.Distribution" averagePacket="length(bytes)" load="total load network" dataRate="(bits/sec)" seed="random seed"/> --> 
+		<!--  load = inter-arrival rate x mean service time.  Inter-Arrival  = load / mean service time -->
+		<Traffic class="rwa.InterLightpathTraffic" type="Poissonian" start="1000" load="10" duration="100" seed="555"/> 
+		<Traffic class="rwa.TopologicalIntraLightpathTraffic" type="Poissonian" start="0" load="10" duration="100" seed="777"/>
+		<Traffic intraSeed="555"/> 	
+	</Generators>
+	<!-- Accounting part. -->	
+	<Accounting>
+		<!-- The accounting class -->
+		<!-- <Accounting class="main.SimulationAccounting"/>-->
+		<Accounting class="rwa.crankback.obgp.CrankAccounting"/>
+		<!-- The subscribers that are accounted for the number of requests. -->
+		<!-- <RequestRelated class="event.EventSubscriber"/> -->
+		  <RequestRelated class="rwa.InterLightpathTraffic"/>	
+		<!--  PARA INTRA -->
+		 <RequestRelated class="rwa.TopologicalIntraLightpathTraffic"/> 
+				
+	</Accounting>	
+	<OPS>
+		<!-- Hop limit="maximum number of hops" bytes="number of bytes of each node identifier"-->
+		<Hop limit="30" bytes="6"/>
+	</OPS>
+	<!-- Configuration for RWA. -->
+	<RWA>
+		<Routing rerouting="END_TO_END" attempts="3" maxAttempts="3" interAttempts="3" interRoutes="3"/>
+		<WA type="FIRST_FIT"/>
+		<Serialize rt="false" file="tables.obj"/>
+	</RWA>
+	<!-- Configuration for the output. -->
+	<Outputs>
+		<!-- The output file containing the simulation values. -->
+		<Output file="$out$"/>
+		<!-- The transient time slice. -->
+		<Transient timeSlice="1E10"/>
+		<!-- The variables that are printed in the output file. -->
+		<Print>LOAD</Print>
+		<Print>LOSS</Print>
+		<Print>RESTORABILITY</Print>
+		<!-- In other files. -->
+		<Print>NODE</Print> 
+		<Print>LINK</Print> 
+		<Print>CLASS</Print>
+		<Print>HOP</Print>
+	
+	</Outputs>
+	<!-- Failure Simulation-->
+	<Failure>
+		<Timing localization="10E-3"/>
+		<NodeFailure time="$time$" node="$node$"/>
+	</Failure>
+<Terminate time="$time$" offset="100"/>
+	 
+</Simulation>	 
+</config>

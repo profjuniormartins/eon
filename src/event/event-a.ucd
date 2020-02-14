@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="event-a" size="695,757" id="event" metadata="uml2-1.0" initialized="true" scrolledY="37" tag="1000" key="3230303530393036204F50532F706176616E69">
+  <children xsi:type="editmodel:InterfaceEditModel" name="EventSubscriber" location="459,512" size="145,128" stereotype="interface" id="event/EventSubscriber" runTimeClassModel="getType(),getContent(),setDistribution(Ldistribution.Distribution;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="97,57">
+      <children xsi:type="editmodel:MethodEditModel" name="getContent" id="event/EventSubscriber#getContent()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getType" id="event/EventSubscriber#getType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDistribution" id="event/EventSubscriber#setDistribution(Ldistribution.Distribution;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Event" location="50,50" size="195,469" id="event/Event" runTimeClassModel="setType(Levent.Event.Type;),Event(DLevent.Event.Type;Ljava.lang.Object;),timeStamp,getType(),toString(),setTimeStamp(D),compareTo(Ljava.lang.Object;),type,event.Event.Type,getContent(),content,getTimeStamp()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="108,57">
+      <children xsi:type="editmodel:AttributeEditModel" name="content" id="event/Event#content"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="timeStamp" id="event/Event#timeStamp"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="type" id="event/Event#type"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="100,152">
+      <children xsi:type="editmodel:MethodEditModel" name="Event" id="event/Event#Event(DLevent.Event.Type;Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="compareTo" id="event/Event#compareTo(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getContent" id="event/Event#getContent()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTimeStamp" id="event/Event#getTimeStamp()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getType" id="event/Event#getType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTimeStamp" id="event/Event#setTimeStamp(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="event/Event#toString()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setType" id="event/Event#setType(Levent.Event.Type;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="172,196">
+      <children xsi:type="editmodel:EnumerationEditModel" name="Type" size="172,194" stereotype="enumeration" id="event/Event$Type" runTimeClassModel="PACKET_ROUTED%,LIGTHPATH_REQUEST%,FAILURE_LINK%,PACKET_ARRIVAL%,FAILURE_NODE%,LIGTHPATH_TEARDOWN%,LIGHTPATH_TEARDOWN%,PACKET_DROP%,LIGHTPATH_REQUEST%">
+        <children xsi:type="editmodel:CompartmentEditModel" size="149,133">
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="PACKET_ARRIVAL" id="event/Event$Type#PACKET_ARRIVAL%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="FAILURE_NODE" id="event/Event$Type#FAILURE_NODE%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="FAILURE_LINK" id="event/Event$Type#FAILURE_LINK%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="LIGHTPATH_REQUEST" id="event/Event$Type#LIGHTPATH_REQUEST%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="LIGHTPATH_TEARDOWN" id="event/Event$Type#LIGHTPATH_TEARDOWN%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="PACKET_DROP" id="event/Event$Type#PACKET_DROP%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="PACKET_ROUTED" id="event/Event$Type#PACKET_ROUTED%"/>
+        </children>
+      </children>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="EventList" location="275,512" size="134,206" id="event/EventList" runTimeClassModel="size(),toString(),EventList(),addEvent(Levent.Event;),pollNextEvent(),queue,getNextEvent(),dump()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="111,19">
+      <children xsi:type="editmodel:AttributeEditModel" name="queue" id="event/EventList#queue"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,133">
+      <children xsi:type="editmodel:MethodEditModel" name="EventList" id="event/EventList#EventList()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addEvent" id="event/EventList#addEvent(Levent.Event;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="dump" id="event/EventList#dump()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNextEvent" id="event/EventList#getNextEvent()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="pollNextEvent" id="event/EventList#pollNextEvent()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="size" id="event/EventList#size()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="event/EventList#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Scheduler" location="295,50" size="194,424" id="event/Scheduler" runTimeClassModel="insertEvent(Levent.Event;),toString(),step(),event.Scheduler.Listener,generatorList,getCounter(Ljava.lang.String;),addGenerator(Levent.EventGenerator;),getStatistics(),eventList,Scheduler()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="144,38">
+      <children xsi:type="editmodel:AttributeEditModel" name="eventList" id="event/Scheduler#eventList"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="generatorList" id="event/Scheduler#generatorList"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="97,133">
+      <children xsi:type="editmodel:MethodEditModel" name="Scheduler" id="event/Scheduler#Scheduler()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addGenerator" id="event/Scheduler#addGenerator(Levent.EventGenerator;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="insertEvent" id="event/Scheduler#insertEvent(Levent.Event;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="step" id="event/Scheduler#step()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStatistics" id="event/Scheduler#getStatistics()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getCounter" id="event/Scheduler#getCounter(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="event/Scheduler#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="171,189">
+      <children xsi:type="editmodel:ClassEditModel" name="Listener" size="171,187" id="event/Scheduler$Listener" runTimeClassModel="getGenerator(),compareTo(Ljava.lang.Object;),Listener(Levent.EventGenerator;),nextEventTime,setTime(D),getTime(),generator">
+        <children xsi:type="editmodel:CompartmentEditModel" size="148,38">
+          <children xsi:type="editmodel:AttributeEditModel" name="generator" id="event/Scheduler$Listener#generator"/>
+          <children xsi:type="editmodel:AttributeEditModel" name="nextEventTime" id="event/Scheduler$Listener#nextEventTime"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel" size="94,95">
+          <children xsi:type="editmodel:MethodEditModel" name="Listener" id="event/Scheduler$Listener#Listener(Levent.EventGenerator;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="compareTo" id="event/Scheduler$Listener#compareTo(Ljava.lang.Object;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="getGenerator" id="event/Scheduler$Listener#getGenerator()"/>
+          <children xsi:type="editmodel:MethodEditModel" name="getTime" id="event/Scheduler$Listener#getTime()"/>
+          <children xsi:type="editmodel:MethodEditModel" name="setTime" id="event/Scheduler$Listener#setTime(D)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="EventGenerator" location="50,512" size="175,263" id="event/EventGenerator" runTimeClassModel="subscribe(Levent.EventSubscriber;),create(D),EventGenerator(Ldistribution.Distribution;),getStartTime(),subscriberName,getSubscriberName(),EventGenerator(Ldistribution.Distribution;D),distribution,subscriber,startTime,getNextEventTime()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="152,76">
+      <children xsi:type="editmodel:AttributeEditModel" name="distribution" id="event/EventGenerator#distribution"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="startTime" id="event/EventGenerator#startTime"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="subscriber" id="event/EventGenerator#subscriber"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="subscriberName" id="event/EventGenerator#subscriberName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="125,133">
+      <children xsi:type="editmodel:MethodEditModel" name="EventGenerator" id="event/EventGenerator#EventGenerator(Ldistribution.Distribution;D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="EventGenerator" id="event/EventGenerator#EventGenerator(Ldistribution.Distribution;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="create" id="event/EventGenerator#create(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNextEventTime" id="event/EventGenerator#getNextEventTime()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStartTime" id="event/EventGenerator#getStartTime()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="subscribe" id="event/EventGenerator#subscribe(Levent.EventSubscriber;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSubscriberName" id="event/EventGenerator#getSubscriberName()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" level="-1" showScope="InPackage" properties="wireOptions=2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="10,10" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

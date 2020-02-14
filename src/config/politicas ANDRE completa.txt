@@ -1,0 +1,23 @@
+        <POLICY from="1" to="2" by="2:f,2:g"/>
+        <POLICY from="2" to="1" by="1:a,1:b"/>
+        <POLICY from="2" to="3" by="3:a"/>
+        <POLICY from="3" to="2" by="2:c,2:d"/>
+        <POLICY from="3" to="4" by="4:a"/>
+        <POLICY from="4" to="3" by="3:d"/>
+        <POLICY from="1" to="5" by="5:g,5:f"/>
+        <POLICY from="5" to="1" by="1:d,1:c"/>
+        <POLICY from="6" to="5" by="5:b,5:c"/>
+        <POLICY from="5" to="6" by="6:e,6:d"/>
+        <POLICY from="6" to="3" by="3:f"/>
+        <POLICY from="3" to="6" by="6:a"/>   
+        <POLICY from="4" to="7" by="7:a,7:b"/>     
+        <POLICY from="7" to="4" by="4:d,4:e"/>  
+        <POLICY from="7" to="6" by="6:b,6:c"/>  
+        <POLICY from="6" to="7" by="7:e"/>  
+        <POLICY from="5" to="8" by="8:a,8:g"/> 
+        <POLICY from="8" to="5" by="5:e,5:d"/> 
+        <POLICY from="8" to="9" by="9:f"/> 
+        <POLICY from="9" to="8" by="8:c"/>  
+        <POLICY from="9" to="7" by="7:c,7:d"/> 
+        <POLICY from="7" to="9" by="9:a,9:b"/>  
+ 
